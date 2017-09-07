@@ -14,11 +14,11 @@ int main()
     {
         printf("1- Ingresar 1er operando <%.2f>\n",num1);
         printf("2- Ingresar 2do operando <%.2f>\n",num2);
-        printf("3- Calcular la suma (A+B)\n");
-        printf("4- Calcular la resta (A-B)\n");
-        printf("5- Calcular la division (A/B)\n");
-        printf("6- Calcular la multiplicacion (A*B)\n");
-        printf("7- Calcular el factorial (A!)\n");
+        printf("3- Calcular la suma\n");
+        printf("4- Calcular la resta\n");
+        printf("5- Calcular la division\n");
+        printf("6- Calcular la multiplicacion\n");
+        printf("7- Calcular el factorial\n");
         printf("8- Calcular todas las operacione\n");
         printf("9- Salir\n");
 
@@ -72,18 +72,16 @@ int main()
                 }
                 result=factorizar(num1);
                 printf("El factor de <%.f> es : %.f",num1,result);
+                printf("\n");
                 system("pause");
                 break;
             case 8:
-                result=sumar(num1,num2);
-                printf("La suma de %f+%f es :%f",num1,num2,result);
+                printf("La suma de %.2f+%.2f es: %.3f",num1,num2,sumar(num1,num2));
                 printf("\n");
-                result=restar(num1,num2);
-                printf("La resta de %f-%f es : %f",num1,num2,result);
+                printf("La resta de %.2f-%.2f es: %.3f",num1,num2,restar(num1,num2));
                 printf("\n");
 
-                result=multiplicar(num1,num2);
-                printf("La multiplicacion de %f*%f es : %f",num1,num2,result);
+                printf("La multiplicacion de %.2f*%.2f es: %.3f",num1,num2,multiplicar(num1,num2));
                 printf("\n");
                 while(num1-(int)num1!=.00 || num1<0 || num1>12){
                   printf("Error, debe ingresar un numero que se entero/positivo:");
@@ -93,18 +91,19 @@ int main()
                 result=factorizar(num1);
                 printf("El factor de <%.f> es : %.f",num1,result);
                 printf("\n");
-                while(num2==0){
-                 printf("No se puede dividir por 0,reingrese divisor:\n");
+                 while(num2==0){
+                 printf("No se puede dividir por 0,reingrese divisor:");
                  scanf("%f",&num2);
                 }
                 result=dividir(num1,num2);
-                printf("La division de %f/%f es : %f",num1,num2,result);
+                printf("La division de %f/%f es : %f",num1,num2,dividir(num1,num2));
                 printf("\n");
                 system("pause");
-
+                break;
             case 9:
                 seguir = 'n';
                 break;
+
         }
 system("cls");
     }
