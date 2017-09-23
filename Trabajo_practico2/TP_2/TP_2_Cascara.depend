@@ -12,3 +12,16 @@
 	"funciones.h"
 	<string.h>
 
+1506132129 source:c:\users\anti-gates\documents\github\tp_laboratorio_1\trabajo_practico2\tp_2\funciones.c
+	<stdio.h>
+	"funciones.h"
+	<string.h>
+
+1506125329 c:\users\anti-gates\documents\github\tp_laboratorio_1\trabajo_practico2\tp_2\funciones.h
+
+1506125329 source:c:\users\anti-gates\documents\github\tp_laboratorio_1\trabajo_practico2\tp_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+

@@ -270,7 +270,7 @@ void imprimirListaOrdenada(ePersona lista[],int tam)
 void imprimirGrafico(ePersona lista[], int tam)
 {
 
-    int i,menoresDe18=0,de19a35=0,mayoresA35=0,mayor,flag=0,sumaTotal;
+    int i,menoresDe18=0,de19a35=0,mayoresA35=0,flag=0,sumaTotal;
 
 
 
@@ -335,6 +335,9 @@ void imprimirGrafico(ePersona lista[], int tam)
         }
         flag=1;
         printf("\n");
+    }
+    if(flag==0){
+       printf("No se ha introducido datos/no existe grafico");
     }
 
 
