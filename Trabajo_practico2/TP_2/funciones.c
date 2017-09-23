@@ -80,10 +80,10 @@ int validarEdad(char digitos[])
     }
     auxEdad=atoi(digitos);
 
-    if(auxEdad<0 || auxEdad>100)
+    if(auxEdad<0 || auxEdad>110)
     {
 
-        printf("Error,Debe ingresar una edad entre 0 y 120\n");
+        printf("Error,Debe ingresar una edad entre 0 y 110\n");
         return 0;
     }
 
@@ -148,7 +148,7 @@ void agregarPersona(ePersona lista [], int tam)
 
             do
             {
-                printf("\nIngrese edad(<0-120>):\n");
+                printf("\nIngrese edad(<0-110>):\n");
                 fflush(stdin);
                 gets(auxDigitos);
             }
